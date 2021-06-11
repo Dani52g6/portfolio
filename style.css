@@ -165,6 +165,24 @@ header li {
   margin-top: 4vw;
 }
 
+#om #third_section {
+  display: grid;
+  place-content: center;
+  grid-template-rows: 0;
+}
+
+#om #third_section button {
+  background-color: #212121;
+  padding: 16px;
+  margin: 3vw 17vw;
+  box-shadow: 6px 6px 9px gray;
+  border: none;
+  color: white;
+  font-family: Aleo;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 #om #first_section h1 {
   text-align: center;
 }
@@ -189,7 +207,7 @@ header li {
   text-align: center;
   font-weight: normal;
   font-style: italic;
-  margin-bottom: 15vw;
+  margin-bottom: 10vw;
   font-size: 0.8rem;
   display: grid;
   line-height: 0px;
@@ -197,7 +215,7 @@ header li {
 }
 
 #om p {
-  margin: 0vw 13vw 13vw;
+  margin: 0vw 13vw 6vw;
   display: grid;
 }
 
@@ -224,6 +242,7 @@ br {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2vw;
+  z-index: -1;
 }
 
 #projekter .section_wrapper {
@@ -310,6 +329,12 @@ br {
     font-family: "Aleo";
   }
 
+  #om #third_section a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Aleo";
+  }
+
   #menuknap {
     display: none;
   }
@@ -375,9 +400,14 @@ br {
     margin-top: 1vw;
   }
 
+  #om #third_section {
+    display: grid;
+    grid-template-rows: 0;
+  }
+
   #om .col_left {
     padding-top: 0vw;
-    margin-left: 15vw;
+    margin-left: 14vw;
 
     grid-row: 1;
   }
@@ -388,10 +418,11 @@ br {
     margin: 0vw;
     display: grid;
     place-items: center;
+    margin-right: 7vw;
   }
 
   #om h2 {
-    margin-bottom: 1vw;
+    margin-bottom: 2vw;
     display: grid;
     place-content: center;
     font-size: 2rem;
@@ -410,8 +441,13 @@ br {
     margin: 0;
   }
 
+  #om #third_section button {
+    margin-top: 4vw;
+    cursor: pointer;
+  }
+
   #om #second_section img {
-    width: 250px;
+    width: 280px;
   }
 
   #galleri h1 {
@@ -454,5 +490,35 @@ br {
 
   #projekter #seventh_section {
     margin-bottom: 4vw;
+  }
+
+  .hidden_img {
+    opacity: 0%;
+  }
+
+  .show {
+    opacity: 100%;
+
+    transition: 1s ease-in-out;
+  }
+}
+
+/*-------------------------- Java ---------------------------*/
+
+.hop {
+  animation-name: hop_kf;
+  animation-duration: 0.3s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes hop_kf {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-1vw);
   }
 }
