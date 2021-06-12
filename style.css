@@ -169,6 +169,7 @@ header li {
   display: grid;
   place-content: center;
   grid-template-rows: 0;
+  margin-bottom: 35vw;
 }
 
 #om #third_section button {
@@ -253,7 +254,7 @@ br {
 
 #projekter h1 {
   text-align: center;
-  margin-bottom: 10vw;
+  margin-bottom: 5vw;
 }
 
 #projekter h2 {
@@ -270,6 +271,78 @@ br {
 
 #projekter .col_right {
   margin-top: 6vw;
+}
+
+#projekter .col_up {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 15px;
+  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+#projekter .col_down {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 15px;
+  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+#projekter .overskrift_6 {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+#projekter #second_section {
+  display: grid;
+  place-content: center;
+}
+
+#projekter #second_section .col_up div {
+  background-color: black;
+  padding: 15px 9px;
+}
+
+#projekter #second_section .col_down div {
+  background-color: black;
+  padding: 15px 9px;
+}
+
+#projekter #second_section a {
+  text-decoration: none;
+  color: white;
+}
+
+#projekter #second_section h3 {
+  font-size: 0.8rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer div {
+  display: flex;
+  max-width: 30vw;
+  gap: 17px;
+}
+
+#galleri footer div {
+  display: flex;
+  max-width: 30vw;
+  gap: 17px;
+}
+
+#galleri h3 {
+  display: none;
+}
+
+.pil {
+  display: none;
 }
 
 /*----------------------- Ipad ------------------------ */
@@ -307,6 +380,11 @@ br {
 /*---------------------------Desktop------------------------*/
 
 @media (min-width: 800px) {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
   header {
     width: 100%;
     background-color: #fff;
@@ -317,6 +395,18 @@ br {
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 0vw;
     padding-bottom: 0vw;
+  }
+
+  footer div {
+    display: flex;
+    max-width: 10vw;
+    gap: 17px;
+  }
+
+  #galleri footer div {
+    display: flex;
+    max-width: 10vw;
+    gap: 17px;
   }
 
   #first_section {
@@ -403,6 +493,7 @@ br {
   #om #third_section {
     display: grid;
     grid-template-rows: 0;
+    margin-bottom: 17vw;
   }
 
   #om .col_left {
@@ -488,8 +579,74 @@ br {
     width: 257px;
   }
 
-  #projekter #seventh_section {
-    margin-bottom: 4vw;
+  #projekter #eighth_section {
+    margin-bottom: 10vw;
+  }
+
+  #projekter #second_section .col_up div {
+    background-color: black;
+    padding: 30px 45px;
+  }
+
+  #projekter #second_section .col_down div {
+    background-color: black;
+    padding: 30px 45px;
+  }
+
+  #projekter #second_section h3 {
+    font-size: 1.5rem;
+  }
+
+  #galleri #first_section {
+    display: grid;
+    place-items: center;
+  }
+
+  #galleri .ikoner {
+    display: flex;
+    max-width: 10vw;
+    gap: 17px;
+  }
+
+  #galleri h3 {
+    display: revert;
+    font-family: "Cambria";
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 3vw;
+    font-size: 1.5rem;
+
+    line-height: 0px;
+    color: rgb(150, 150, 150);
+  }
+
+  .pil {
+    display: revert;
+    max-width: 4vw;
+    transform: rotate(90deg);
+    margin-bottom: 3vw;
+    z-index: -1;
+  }
+
+  /*-------------------------- Java ---------------------------*/
+
+  .hop {
+    animation-name: hop_kf;
+    animation-duration: 0.3s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+
+  @keyframes hop_kf {
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(-1vw);
+    }
   }
 
   .hidden_img {
@@ -499,25 +656,5 @@ br {
   .show {
     opacity: 100%;
     transition: 1s ease-in-out;
-  }
-}
-
-/*-------------------------- Java ---------------------------*/
-
-.hop {
-  animation-name: hop_kf;
-  animation-duration: 0.3s;
-  animation-iteration-count: 2;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
-
-@keyframes hop_kf {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-1vw);
   }
 }

@@ -29,7 +29,7 @@ function scrollEffect() {
     document.querySelector("#line3").classList.add("hidden_img");
   }
 
-  if (window.scrollY >= 650) {
+  if (window.scrollY >= 700) {
     document.querySelector("#line4").classList.remove("hidden_img");
 
     document.querySelector("#line4").style.transition = "1s ease-in-out";
