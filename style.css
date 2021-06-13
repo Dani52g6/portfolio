@@ -29,6 +29,14 @@
   src: url(font/Cambria.woff);
 }
 
+#om p br {
+  margin: 10px;
+}
+
+#om h3 br {
+  margin: 2vw;
+}
+
 h1 {
   font-family: "Calibri";
   font-size: 2rem;
@@ -224,10 +232,6 @@ header li {
   margin: 5vw 13vw;
 }
 
-br {
-  margin: 2vw;
-}
-
 #galleri h1 {
   text-align: center;
   margin-bottom: 15vw;
@@ -323,6 +327,7 @@ br {
 footer {
   display: flex;
   justify-content: center;
+  margin-bottom: 3vw;
 }
 
 footer div {
@@ -335,6 +340,7 @@ footer div {
   display: flex;
   max-width: 30vw;
   gap: 17px;
+  z-index: 0;
 }
 
 #galleri h3 {
@@ -358,10 +364,6 @@ footer div {
 
   h2 {
     font-size: 2.5rem;
-  }
-
-  br {
-    margin: 1vw;
   }
 
   #index h1 {
@@ -427,10 +429,6 @@ footer div {
 
   #menuknap {
     display: none;
-  }
-
-  br {
-    margin: 1vw;
   }
 
   nav {
@@ -529,7 +527,7 @@ footer div {
   }
 
   #om p {
-    margin: 0;
+    margin: 0vw;
   }
 
   #om #third_section button {
