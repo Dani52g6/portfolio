@@ -169,6 +169,21 @@ header li {
   color: rgb(150, 150, 150);
 }
 
+#om #se_mere {
+  background-color: #212121;
+  padding: 20px;
+  margin: 3vw 17vw;
+  box-shadow: 6px 6px 9px gray;
+  border: none;
+  color: white;
+  font-family: Aleo;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  display: grid;
+  place-content: center;
+}
+
 #om #second_section {
   margin-top: 4vw;
 }
@@ -485,6 +500,10 @@ footer div {
   #index h2 {
     margin: 0;
     font-size: 1.5rem;
+  }
+
+  #om #se_mere {
+    padding: 25px;
   }
 
   #om .section_wrapper {
