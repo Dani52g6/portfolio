@@ -269,6 +269,10 @@ header li {
   z-index: -1;
 }
 
+#projekter p a {
+  color: rgb(43, 43, 43);
+}
+
 #projekter .section_wrapper {
   display: grid;
   margin: 0vw 10vw;
@@ -404,6 +408,10 @@ footer div {
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+  }
+
+  #menu li a:hover {
+    color: darkgrey;
   }
 
   header {
